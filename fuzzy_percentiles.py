@@ -16,7 +16,7 @@ def fill_bins(scores, bin_count):
     # Populates the bins with scores
     bins = []
     counts = Counter(scores)
-    entries = set(scores)
+    entries = sorted(set(scores))
 
     for entry in entries:
         bin = []
